@@ -106,7 +106,6 @@ final _prefecture_name = {
 final _emergency_state = [
   1,
   4,
-  7,
   8,
   9,
   10,
@@ -114,9 +113,6 @@ final _emergency_state = [
   12,
   13,
   14,
-  16,
-  16,
-  19,
   21,
   22,
   23,
@@ -127,14 +123,21 @@ final _emergency_state = [
   28,
   33,
   34,
+  40,
+  47,
+];
+
+final _warning_state = [
+  7,
+  16,
+  17,
+  19,
   37,
   38,
-  39,
   39,
   41,
   42,
   43,
   45,
   46,
-  47,
 ];

@@ -60,7 +60,11 @@ class _SVGMapState extends State<SVGMap> {
             // debugPrint('data: $data');
             final printName = _prefecture_name[_prefecture_id[id]];
             shapes.add(MapShape(data, printName!,
-                (_emergency_state.contains(_prefecture_id[id])) ? Colors.orange : Colors.white));
+                (_emergency_state.contains(_prefecture_id[id]))
+                    ? Colors.orange
+                    : (_warning_state.contains(_prefecture_id[id]))
+                        ? Colors.yellow
+                        : Colors.white));
           });
         }
       });
